@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Weight Input -->
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Height Input -->
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height (cm)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI will appear here"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+</LinearLayout>
