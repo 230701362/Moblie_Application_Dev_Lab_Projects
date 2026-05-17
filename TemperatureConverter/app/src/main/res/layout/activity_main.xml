@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature Converter"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Temperature Input -->
+    <EditText
+        android:id="@+id/etTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter temperature"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Mode Selector (Celsius to Fahrenheit / Fahrenheit to Celsius) -->
+    <ToggleButton
+        android:id="@+id/toggleMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Celsius to Fahrenheit"
+        android:textOff="Fahrenheit to Celsius"
+        android:checked="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="20sp"
+        android:textStyle="medium"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+</LinearLayout>
